@@ -1,0 +1,51 @@
+.cd-tab {
+    padding: 3px;
+    border: 1px solid #ddd;
+}
+
+.cd-tab-headers > div {
+    float: left;
+    padding: 7px;
+    font-weight: 600;
+    border: 1px solid #ddd;
+    background-color: lightgray;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in;
+}
+
+.cd-tab-headers > div.active {
+    background-color: darkgray;
+    transition: background-color 0.1s ease-in;
+}
+
+.cd-tab-content > div {
+    display: none;
+    padding: 10px;
+    clear: both;
+}
+
+.cd-tab-content > div.active {
+    display: block;
+}
+
+@media screen {
+    .cd-mobile-tab-headers {
+	display: none;
+    }
+
+   .cd-tab-headers > div {
+       display: block;
+   }
+}
+
+@media only screen and (max-width : 480px) {
+   .cd-mobile-tab-headers {
+	display: block;
+	width: 100%;
+    }
+
+   .cd-tab-headers > div {
+       display: none;
+   }
+ }
