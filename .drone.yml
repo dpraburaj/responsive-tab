@@ -1,7 +1,5 @@
 pipeline:
   build:
-    image: golang
+    image: python
     commands:
-      - go get
-      - go build
-      - go test
+      - echo "Branch name is $$CI_BRANCH"
